@@ -16,7 +16,7 @@ const Passgen = () => {
   const [password, setPassword] = useState('Press generate for a password');
 
   const generatePassword = async () => {
-    fetch('https://iadxfl.deta.dev/api/password')
+    fetch('https://api.esie.nl/v1/password')
       .then((res) => {
         return res.json();
       })
